@@ -3,11 +3,10 @@ title: "Covid 19 EDA"
 date: "2023-10-23"
 ---
 
-#About Project
-* Exploring Covid event trends in different countries
-* Practicing visualization with ggplot
-* Transforming data for PowerBI Dashboard
-
+# About Project
+  * Exploring Covid event trends in different countries
+  * Practicing visualization with ggplot
+  * Transforming data for PowerBI Dashboard
 
 
 
@@ -83,8 +82,11 @@ factorize_str <- function (dt){
 ```{r}
 
 #split date into 3 sections year,month and day
-#This would be used for PowerBI 
+#This will be used for PowerBI 
 dt[, c('year', 'month','day') := tstrsplit(Date, '-', fixed = TRUE,)]
+
+#Export as csv for PowerBI
+fwrite(dt, "covid_data.csv")
 
 # Print the updated data.table
 dt
@@ -162,7 +164,7 @@ country_events_data_dt [ , .(avg_case_per_month=as.integer((sum(Confirmed)*30)/2
 
 
 ```{r}
-#See cases per month for each country
+#See cases per day for each country
 country_events_data_dt [ , .(avg_case_per_day=as.integer(sum(Confirmed)/269)), by='Country.Region'][order(-avg_case_per_day)]
 ```
 
