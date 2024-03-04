@@ -12,6 +12,6 @@
 - insight: Very few death. The recovery event line follows closely with the confirmed case event.
 
 ## PowerBI Dashboard
-![Alt text](hydration_status.PNG)
+![Alt text](powerbI_australia_dashboard.PNG)
 
-- insight: Patients in the bad hydration status has much higher proportion of AKI
+- PowerBI Dashboard of Australia Data
