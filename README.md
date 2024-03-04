@@ -9,9 +9,10 @@
 ## Australia Capital Covid Events Trend
 ![Alt text](australia_events_trend.PNG)
 
-- insight: Very few death. The recovery event line follows closely with the confirmed case event.
+- Insight: Very few death. The recovery event line follows closely with the confirmed case event.
 
 ## PowerBI Dashboard
 ![Alt text](powerbI_australia_dashboard.PNG)
 
-- PowerBI Dashboard of Australia Data
+- Insight: Seems like cases peaked on September 2020. Then it started dropping off.
+- Insight: Looks like Victoria was hit the hardest.
